@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média das Idades</title>
+</head>
+<body>
+    <p>Maitê possui 11 anos, enquanto os gêmeos Gabriel e Guilherme tem 17 anos. Os pais, Andréia e Rogério, tem respectivamente 40 e 41 anos.</p>
+    <button onclick="calcular()">calcular</button>
+    <p id="x">...</p>
+
+    <script>
+        var idade_maite = 11
+        var idade_guilherme = 17
+        var idade_gabriel = 17
+        var idade_andreia = 40
+        var idade_rogerio = 41
+        
+        function calcular(){
+            var media = (idade_andreia + idade_gabriel + idade_guilherme + idade_maite + idade_rogerio)/5
+            document.getElementById("x").innerText = "A média das idades da família é igual a " + media + " anos!"
+        }
+    </script>
+</body>
+</html>
